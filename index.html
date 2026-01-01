@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <title>Productor Musical | Multitracks</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- FAVICON PROFESIONAL: Clave de sol vectorial dorada + LORD MT -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%230d0d0d'/><path d='M36 6 C38 8, 38 14, 34 18 C30 22, 26 18, 28 14 C30 10, 36 8, 36 6 Z M32 18 L32 50 L28 50 L28 18 Z' fill='%23f5c542'/><text x='50%25' y='85%25' text-anchor='middle' font-size='8' font-family='Arial' fill='%23f5c542'>LORD MT</text></svg>">
+
 </head>
 <body>
 
@@ -14,19 +19,18 @@
         <a href="#multitracks">Multitracks</a>
         <a href="#gratis">Recursos Gratis</a>
         <a href="#personalizado">Multitrack Personalizado</a>
-        <a href="#contacto">Contacto</a>
+        <a id="cart-btn" onclick="openCart()">Carrito</a>
     </nav>
 </header>
 
 <section id="inicio" class="hero">
     <div class="hero-content">
         <h1>ONLY LORD</h1>
-        <h2>Multitracks profesionales · Producción musical · Producción audio visual </h2>
+        <h2>Multitracks profesionales · Producción musical · Producción audiovisual</h2>
         <p>
             Multitracks de alta calidad para iglesias, bandas y músicos.
             Sonido moderno, arreglos profesionales - personalizados y recursos listos para usar.
         </p>
-
         <div class="hero-buttons">
             <a href="#multitracks" class="btn-primary">Ver Multitracks</a>
             <a href="#personalizado" class="btn-secondary">Multitrack Personalizado</a>
@@ -34,101 +38,174 @@
     </div>
 </section>
 
-
 <section id="multitracks">
 <h2 class="section-title">Multitracks</h2>
-
 <div class="products">
 
-<!-- PRODUCTOS -->
-<div class="product-card" onclick="openProductDetail('LONELY - VAES',19,'Multitrack profesional','__7gTx79T2Y')">
-<img src="images/lonely.JPG"><h3>LONELY - VAES</h3><span class="price">$19</span></div>
+<!-- PRODUCTOS COMPLETOS -->
+<div class="product-card">
+<img src="images/lonely.JPG"><h3>LONELY - VAES</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('__7gTx79T2Y')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('LONELY - VAES',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('LO QUE DIOS DICE QUE SOY',19,'Multitrack profesional','w_LFCopstUk')">
-<img src="images/lo que Dios duce que soy.JPG"><h3>LO QUE DIOS DICE QUE SOY</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/lo que Dios duce que soy.JPG"><h3>LO QUE DIOS DICE QUE SOY</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('w_LFCopstUk')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('LO QUE DIOS DICE QUE SOY',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('AWAKE AND LIVE - SKILLET',19,'Multitrack profesional','MdgiTgkoO4g')">
-<img src="images/AWAKE AND LIVE.JPG"><h3>AWAKE AND LIVE - SKILLET</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/AWAKE AND LIVE.JPG"><h3>AWAKE AND LIVE - SKILLET</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('MdgiTgkoO4g')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('AWAKE AND LIVE - SKILLET',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('ESTOY CONVENCIDO',19,'Multitrack profesional','OscK7rdACjc')">
-<img src="images/estoy convencido.JPG"><h3>ESTOY CONVENCIDO</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/estoy convencido.JPG"><h3>ESTOY CONVENCIDO - WORSHIP BAND LIVE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('OscK7rdACjc')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('ESTOY CONVENCIDO - WORSHIP BAND LIVE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('SALMOS 133 / SOBRENATURAL',19,'Multitrack profesional','b5d5j3CW6Vo')">
-<img src="images/SALMOS133SO.jpg"><h3>SALMOS 133</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/SALMOS133SO.jpg"><h3>SALMOS 133 / SOBRENATURAL - MERENGUE NEW WINE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('b5d5j3CW6Vo')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('SALMOS 133 / SOBRENATURAL - MERENGUE NEW WINE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('FIESTA EN EL DESIERTO - REMIX',19,'Multitrack profesional','_LnW2izFevI')">
-<img src="images/fiesta en el desierto.JPG"><h3>FIESTA EN EL DESIERTO</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/fiesta en el desierto.JPG"><h3>FIESTA EN EL DESIERTO - REMIX</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('_LnW2izFevI')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('FIESTA EN EL DESIERTO - REMIX',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('CUANDO YO TE CONOCI - GP',19,'Multitrack profesional','LnJCi9AvAbE')">
-<img src="images/CUANDO_GP.jpg"><h3>CUANDO YO TE CONOCI</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/CUANDO_GP.jpg"><h3>CUANDO YO TE CONOCI - GP</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('LnJCi9AvAbE')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('CUANDO YO TE CONOCI - GP',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('TU HIJO SOY - LIVE',19,'Multitrack profesional','RjpYd6R5msg')">
-<img src="images/HIJOLIVE.jpg"><h3>TU HIJO SOY</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/HIJOLIVE.jpg"><h3>TU HIJO SOY - LIVE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('RjpYd6R5msg')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('TU HIJO SOY - LIVE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('CON PODER - LIVE',19,'Multitrack profesional','vVI-M39MZdw')">
-<img src="images/CONPODER.jpg"><h3>CON PODER</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/CONPODER.jpg"><h3>CON PODER - LIVE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('vVI-M39MZdw')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('CON PODER - LIVE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('ERES FIEL - JORGE PRIVADO',19,'Multitrack profesional','ImQQLfu17ec')">
-<img src="images/ERESFIELJOR.jpg"><h3>ERES FIEL</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/ERESFIELJOR.jpg"><h3>ERES FIEL - CAMBIARE MI TRISTEZA - JORGE PRIVADO</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('ImQQLfu17ec')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('ERES FIEL - CAMBIARE MI TRISTEZA - JORGE PRIVADO',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('EN LOS MONTES - LIVE',19,'Multitrack profesional','KU5DXXtJNAg')">
-<img src="images/EN LOS.jpg"><h3>EN LOS MONTES</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/EN LOS.jpg"><h3>EN LOS MONTES - LIVE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('KU5DXXtJNAg')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('EN LOS MONTES - LIVE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('LO FUNDAMENTAL - LA HORMIGA',19,'Multitrack profesional','6m3ZfsMO2Dg')">
-<img src="images/HORMIG.jpg"><h3>LO FUNDAMENTAL</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/HORMIG.jpg"><h3>LO FUNDAMENTAL - LA HORMIGA</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('6m3ZfsMO2Dg')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('LO FUNDAMENTAL - LA HORMIGA',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('HOSSANA - DUBSTEP',19,'Multitrack profesional','oOtiCi8oVUk')">
-<img src="images/HOSS.jpg"><h3>HOSSANA</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/HOSS.jpg"><h3>HOSSANA - DUBSTEP - MARCOS BARRIENTOS</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('oOtiCi8oVUk')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('HOSSANA - DUBSTEP - MARCOS BARRIENTOS',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('CANTAREMOS DE TU GRAN AMOR',19,'Multitrack profesional','bkzfSG7HcKM')">
-<img src="images/CANTAMOR.jpg"><h3>CANTAREMOS DE TU GRAN AMOR</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/CANTAMOR.jpg"><h3>CANTAREMOS DE TU GRAN AMOR - LIVE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('bkzfSG7HcKM')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('CANTAREMOS DE TU GRAN AMOR - LIVE',19)">Añadir al carrito</button>
+</div>
 
-<div class="product-card" onclick="openProductDetail('A MI CORAZON - KARI JOBE',19,'Multitrack profesional','rQWSn_e3v9I')">
-<img src="images/KORI.jpg"><h3>A MI CORAZON</h3><span class="price">$19</span></div>
+<div class="product-card">
+<img src="images/KORI.jpg"><h3>A MI CORAZON - KORI JOBE</h3><span class="price">$19</span>
+<div class="play-overlay" onclick="openPreview('rQWSn_e3v9I')"><div class="play-triangle"></div></div>
+<button class="add-cart" onclick="addToCart('A MI CORAZON - KORI JOBE',19)">Añadir al carrito</button>
+</div>
 
 </div>
 </section>
 
 <section id="gratis">
 <h2 class="section-title">Recursos Gratis</h2>
-<ol>
-<li>Recurso 1</li><li>Recurso 2</li><li>Recurso 3</li><li>Recurso 4</li><li>Recurso 5</li>
-<li>Recurso 6</li><li>Recurso 7</li><li>Recurso 8</li><li>Recurso 9</li><li>Recurso 10</li>
-</ol>
+<p style="text-align:center;font-size:1.5rem;color:#f5c542;">MUY PRONTO</p>
 </section>
 
 <section id="personalizado">
 <h2 class="section-title">Multitrack Personalizado</h2>
-<button class="btn-primary" onclick="openCustomModal()">Solicitar Multitrack</button>
+<div class="custom-section">
+<input id="custom-name" placeholder="Tema del multitrack">
+<input id="custom-artist" placeholder="Artista">
+<input id="custom-video" placeholder="Link de video de referencia">
+<textarea id="custom-details" placeholder="Datos extra: especificaciones"></textarea>
+<button class="custom-btn" onclick="sendCustomForm()">Solicitar</button>
+</div>
 </section>
 
-<section id="contacto">
-<h2 class="section-title">Contacto</h2>
-<p>WhatsApp: +591 62276138</p>
-<p>Instagram | YouTube | TikTok</p>
-</section>
-
-<!-- MODAL PRODUCTO -->
-<div id="productModal" class="modal">
+<!-- MODAL DEMO -->
+<div id="previewModal" class="modal">
 <div class="modal-content">
-<button class="modal-close" onclick="closeProductDetail()">×</button>
-<h2 id="modal-title"></h2>
-<p id="modal-description"></p>
-<iframe id="modal-youtube" allowfullscreen></iframe>
-<button id="buy-btn" class="btn-primary">Comprar</button>
+<button class="modal-close" onclick="closePreview()">×</button>
+<iframe id="preview-iframe" allowfullscreen></iframe>
 </div>
 </div>
 
-<!-- MODAL PERSONALIZADO -->
-<div id="customModal" class="modal">
+<!-- MODAL CARRITO -->
+<div id="cartModal" class="modal">
 <div class="modal-content">
-<button class="modal-close" onclick="closeCustomModal()">×</button>
-<h2>Multitrack Personalizado</h2>
-<input id="custom-name" placeholder="Nombre del multitrack">
-<textarea id="custom-details" placeholder="Describe BPM, tono, estilo..."></textarea>
-<button class="btn-primary" onclick="sendCustomForm()">Enviar WhatsApp</button>
+<button class="modal-close" onclick="closeCart()">×</button>
+<h2>Carrito</h2>
+<div id="cart-items"></div>
+<h3>Total: <span id="cart-total">$0</span></h3>
+
+<div class="custom-section">
+<input id="client-name" placeholder="Nombre completo">
+<input id="client-email" placeholder="Correo electrónico">
+<input id="client-country" placeholder="País">
+<input id="client-city" placeholder="Ciudad">
+<select id="client-payment">
+<option value="">Selecciona método de pago</option>
+<option value="BINANCE USDT">BINANCE USDT</option>
+<option value="REMITLY">REMITLY</option>
+<option value="AIRTM">AIRTM</option>
+<option value="Transferencia QR (Bolivia)">Transferencia QR (Bolivia)</option>
+</select>
+<button class="custom-btn" onclick="checkoutCart()">Pagar</button>
 </div>
 </div>
+</div>
+
+<!-- ===== FOOTER MODERNO CON ICONOS ===== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p><i class="fa-solid fa-phone"></i> <a href="https://wa.me/59162276138" target="_blank">+591 62276138</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:beltsasar007@gmail.com">beltsasar007@gmail.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Redes Sociales</h3>
+            <!-- <p><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p> -->
+            <p><a href="https://www.youtube.com/@onlylordMT" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></p>
+            <p><a href="https://www.tiktok.com/@only_lord_mt?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></p>
+        </div>
+       <div class="footer-column">
+    <h3>Derechos</h3>
+    <p>©2020-2026 por <strong>ONLY LORD MT</strong> Todos Los Derechos Reservados.</p>
+    </div>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
