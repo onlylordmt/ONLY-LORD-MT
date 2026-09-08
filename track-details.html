@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es">
+	<head>
+		<title>Detalles del Multitrack - ONLY LORD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Diseño avanzado para la página técnica del recurso con resplandores neón */
+			.details-container {
+				display: grid;
+				grid-template-columns: 1.2fr 0.8fr;
+				gap: 3em;
+				margin-top: 2em;
+			}
+
+			/* Contenedor del Reproductor de Video de YouTube (16:9) optimizado */
+			.video-screen-box {
+				position: relative;
+				width: 100%;
+				padding-top: 56.25%;
+				background: #000;
+				border-radius: 6px;
+				border: solid 1px rgba(255, 255, 255, 0.1);
+				box-shadow: 0 10px 30px rgba(0, 242, 254, 0.05);
+				overflow: hidden;
+				margin-bottom: 2em;
+			}
+
+			.video-screen-box iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+
+			/* Ficha Técnica Lateral */
+			.tech-spec-box {
+				background: var(--onlylord-bg-estudio);
+				border: solid 1px rgba(255, 255, 255, 0.05);
+				padding: 2em;
+				border-radius: 6px;
+				height: fit-content;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+			}
+
+			.tech-spec-box h3 {
+				color: var(--onlylord-accent);
+				border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+				padding-bottom: 0.5em;
+				margin-bottom: 1em;
+				text-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+			}
+
+			.spec-list li {
+				display: flex;
+				justify-content: space-between;
+				padding: 0.8em 0;
+				border-bottom: solid 1px rgba(255, 255, 255, 0.03);
+				font-size: 0.95em;
+			}
+
+			.spec-list li strong {
+				color: #ffffff;
+			}
+
+			.spec-list li span {
+				color: var(--onlylord-text-dim);
+			}
+
+			/* Lista de Pistas / Stems Separados */
+			.stems-list-box {
+				margin-top: 1em;
+			}
+
+			.stems-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1em;
+				margin-top: 1.5em;
+			}
+
+			.stem-item {
+				background: rgba(255, 255, 255, 0.01);
+				border: solid 1px rgba(255, 255, 255, 0.04);
+				padding: 0.8em 1.2em;
+				border-radius: 4px;
+				font-family: "Courier New", monospace;
+				font-size: 0.9em;
+				color: rgba(255, 255, 255, 0.8);
+				display: flex;
+				align-items: center;
+				gap: 0.8em;
+				transition: border-color 0.2s ease;
+			}
+
+			.stem-item:hover {
+				border-color: rgba(0, 242, 254, 0.3);
+			}
+
+			.stem-item::before {
+				content: '\f192';
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				color: var(--onlylord-accent);
+				font-size: 0.8em;
+				text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+			}
+
+			/* Botón de Compra / Carrito */
+			.btn-cart-add {
+				width: 100%;
+				margin-top: 2em;
+				background-color: var(--onlylord-accent) !important;
+				color: #000000 !important;
+				box-shadow: none !important;
+				font-weight: 800 !important;
+				height: 3.5em !important;
+				line-height: 3.5em !important;
+				transition: all 0.2s ease-in-out !important;
+			}
+
+			.btn-cart-add:hover {
+				background-color: var(--onlylord-accent-hover) !important;
+				box-shadow: 0 5px 20px rgba(0, 242, 254, 0.3) !important;
+			}
+
+			/* Adaptabilidad Responsiva */
+			@media screen and (max-width: 980px) {
+				.details-container { grid-template-columns: 1fr; gap: 2em; }
+				.stems-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ONLY LORD</a></h1>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Navegación</h2>
+							<ul class="links">
+								<li><a href="index.html">Inicio / Portafolio</a></li>
+								<li><a href="multitracks.html">Multitracks / Secuencias</a></li>
+								<li><a href="beats.html">Beats</a></li>
+								<li><a href="sonidos.html">Sonidos Premium</a></li>
+								<li><a href="produccion.html">Producción Musical Online</a></li>
+								<li><a href="cursos.html">Cursos Online</a></li>
+								<li><a href="recursos.html">Recursos Gratuitos</a></li>
+								<li><a href="pedido.html">Pedido Personalizado</a></li>
+								<li><a href="soporte.html">Soporte & Ayuda</a></li>
+								<li><a href="membresia.html">LORD VIP <span class="menu-badge">Próximamente</span></a></li>
+								<li><a href="carrito.html" class="menu-cart-link"><span class="icon solid fa-shopping-cart"></span> Mi Carrito (0)</a></li>
+							</ul>
+							<button type="button" class="close" aria-label="Cerrar menú"></button>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 id="detail-track-title">Cargando Recurso...</h2>
+								<p id="detail-track-artist">Por favor espera un momento</p>
+							</div>
+						</header>
+
+						<!-- Sección Principal de Detalles -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="details-container">
+										
+										<!-- Bloque Izquierdo: Pantalla de Video y Lista de Pistas -->
+										<div>
+											<!-- Reproductor de Video con Lazy Loading Técnico -->
+											<div class="video-screen-box">
+												<iframe id="detail-video-iframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+
+											<!-- Desglose de Instrumentos Incluidos -->
+											<div class="stems-list-box">
+												<h3 class="major">Estructura del Archivo (Stems Separados)</h3>
+												<p>Esta es la lista completa de canales independientes incluidos dentro del contenedor empaquetado:</p>
+												<div class="stems-grid" id="detail-stems-container">
+													<!-- Las pistas se listarán automáticamente según el multitrack por JS -->
+												</div>
+											</div>
+										</div>
+
+										<!-- Bloque Derecho: Ficha Técnica y Botón de Venta -->
+										<div class="tech-spec-box">
+											<h3>Especificaciones Técnicas</h3>
+											<ul class="spec-list">
+												<li><span>Acorde:</span> <strong id="detail-spec-acorde">—</strong></li>
+												<li><span>Tempo:</span> <strong id="detail-spec-tempo">—</strong></li>
+												<li><span>Cantidad de Tracks:</span> <strong id="detail-spec-tracks-count">—</strong></li>
+												<li><span>Peso por Track:</span> <strong id="detail-spec-weight">—</strong></li>
+												<li><span>Tipo de Recurso:</span> <strong>Multitrack</strong></li>
+												<li><span>Formato del Audio:</span> <strong>WAV (Linear PCM)</strong></li>
+												<li><span>Profundidad de Bits:</span> <strong>24-Bit Stereo</strong></li>
+												<li><span>Frecuencia de Muestreo:</span> <strong id="detail-spec-sample-rate">44.1 kHz</strong></li>
+												<li><span>Distribución:</span> <strong>Empaquetado .ZIP</strong></li>
+												<li><span>Precio:</span> <span id="detail-track-price"><strong>—</strong></span></li>
+											</ul>
+
+											<button class="button primary btn-cart-add" id="btn-add-to-cart-action">
+												<span class="icon solid fa-cart-plus"></span> Añadir al Carrito
+											</button>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer (4 Contactos Simétricos Rectos a la Izquierda y Copyright Centrado) -->
+					<section id="footer">
+						<div class="inner">
+							<div class="contact">
+								<div>
+									<h2 class="major">Información de Contacto</h2>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:beltsasar007@gmail.com">beltsasar007@gmail.com</a></li>
+										<li class="icon brands fa-whatsapp"><a href="https://wa.me/59162276138" target="_blank">WhatsApp Business</a></li>
+										<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@onlylordMT" target="_blank">Canal de YouTube</a></li>
+										<li class="icon brands fa-instagram"><a href="https://www.instagram.com/only_lord_music/" target="_blank">Instagram Oficial</a></li>
+									</ul>
+								</div>
+								<div>
+									<h2 class="major">Soporte Técnico de Archivos</h2>
+									<p style="margin: 0; font-size: 0.95em; line-height: 1.6; color: rgba(255,255,255,0.7);">Todos nuestros stems de audio se procesan de forma nativa sin compresión destructiva, garantizando compatibilidad inmediata al ser importados en cualquier DAW de estudio o software de directo.</p>
+								</div>
+							</div>
+							<ul class="copyright">
+								<li>&copy; 2026 Only Lord. Todos los derechos reservados.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts (Llamada limpia en orden nativo) -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/store-logic.js"></script>
+
+	</body>
+</html>

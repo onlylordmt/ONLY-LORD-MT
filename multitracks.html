@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es">
+	<head>
+		<title>MULTITRACKS - ONLY LORD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Reglas avanzadas para la rejilla de tarjetas rectangulares premium y buscador */
+			.catalog-header-actions {
+				margin-bottom: 3em;
+				background: var(--onlylord-bg-estudio);
+				padding: 1.5em;
+				border-radius: 5px;
+				border: solid 1px rgba(255, 255, 255, 0.05);
+			}
+			
+			.search-wrapper {
+				position: relative;
+				width: 100%;
+			}
+			
+			.search-wrapper input {
+				height: 3em !important;
+				padding-left: 3.5em !important;
+				border-radius: 4px !important;
+			}
+			
+			.search-wrapper::before {
+				content: '\f002';
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				position: absolute;
+				left: 1.5em;
+				top: 50%;
+				transform: translateY(-50%);
+				color: rgba(255, 255, 255, 0.3);
+				font-size: 0.9em;
+				z-index: 10;
+			}
+
+			/* Rejilla de Rectángulos (Grid) */
+			.grid-catalog {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2.5em;
+				margin-top: 2em;
+			}
+
+			/* Tarjeta Rectangular de Autor */
+			.track-card {
+				background: var(--onlylord-bg-estudio);
+				border-radius: 6px;
+				border: solid 1px rgba(255, 255, 255, 0.04);
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+				text-align: left;
+			}
+
+			.track-card:hover {
+				transform: translateY(-5px);
+				border-color: var(--onlylord-accent) !important;
+				box-shadow: 0 15px 35px rgba(0, 242, 254, 0.15) !important;
+			}
+
+			/* Miniatura de YouTube (16:9) con Máscara de Interacción */
+			.track-thumbnail-wrapper {
+				position: relative;
+				width: 100%;
+				padding-top: 56.25%;
+				background: #000;
+				overflow: hidden;
+				border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+			}
+
+			.track-thumbnail-wrapper img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+			}
+
+			/* Máscara de Neón Flotante */
+			.track-thumbnail-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(7, 7, 8, 0.7);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: opacity 0.3s ease;
+				gap: 0.5em;
+			}
+
+			.track-thumbnail-overlay i, .track-thumbnail-overlay .fa-play {
+				color: var(--onlylord-accent);
+				font-size: 1.5em;
+				text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+			}
+
+			.overlay-text {
+				font-family: "Raleway", Helvetica, sans-serif;
+				font-size: 0.8em;
+				font-weight: 700;
+				color: var(--onlylord-accent);
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+
+			.track-card:hover .track-thumbnail-wrapper img {
+				transform: scale(1.05);
+			}
+
+			.track-card:hover .track-thumbnail-overlay {
+				opacity: 1;
+			}
+
+			/* Estructura del cuerpo */
+			.track-card-body {
+				padding: 1.5em;
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 1.5em;
+			}
+
+			.track-card-info h3 {
+				font-family: "Raleway", Helvetica, sans-serif;
+				font-size: 1.1em;
+				font-weight: 700;
+				margin: 0 0 0.4em 0;
+				line-height: 1.4;
+				color: #ffffff;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			.track-card-info .artist {
+				font-size: 0.85em;
+				color: var(--onlylord-text-dim);
+				margin: 0;
+				display: block;
+				font-weight: 600;
+			}
+
+			.track-price-tag {
+				display: inline-block;
+				margin-top: 0.5em;
+				font-family: "Outfit", sans-serif;
+				font-size: 0.9em;
+				font-weight: 700;
+				color: var(--onlylord-accent);
+			}
+
+			/* Botón con Resplandor */
+			.btn-card-action {
+				width: 100%;
+				height: 3em !important;
+				line-height: 3em !important;
+				padding: 0 !important;
+				font-size: 0.8em !important;
+				background-color: transparent !important;
+				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15) !important;
+				color: #ffffff !important;
+				font-weight: 700 !important;
+				border-radius: 4px !important;
+				transition: all 0.2s ease !important;
+			}
+
+			.track-card:hover .btn-card-action {
+				background-color: var(--onlylord-accent) !important;
+				box-shadow: inset 0 0 0 2px var(--onlylord-accent) !important;
+				color: #000000 !important;
+			}
+
+			/* Adaptabilidad Responsiva */
+			@media screen and (max-width: 980px) {
+				.grid-catalog { grid-template-columns: repeat(2, 1fr); gap: 1.5em; }
+			}
+
+			@media screen and (max-width: 576px) {
+				.grid-catalog { grid-template-columns: 1fr; gap: 1.5em; }
+				.track-card-body { padding: 1.2em; }
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ONLY LORD</a></h1>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Navegación</h2>
+							<ul class="links">
+								<li><a href="index.html">Inicio / Portafolio</a></li>
+								<li><a href="multitracks.html">Multitracks / Secuencias</a></li>
+								<li><a href="beats.html">Beats</a></li>
+								<li><a href="sonidos.html">Sonidos Premium</a></li>
+								<li><a href="produccion.html">Producción Musical Online</a></li>
+								<li><a href="cursos.html">Cursos Online</a></li>
+								<li><a href="recursos.html">Recursos Gratuitos</a></li>
+								<li><a href="pedido.html">Pedido Personalizado</a></li>
+								<li><a href="soporte.html">Soporte & Ayuda</a></li>
+								<li><a href="membresia.html">LORD VIP <span class="menu-badge">Próximamente</span></a></li>
+								<li><a href="carrito.html" class="menu-cart-link"><span class="icon solid fa-shopping-cart"></span> Mi Carrito (0)</a></li>
+							</ul>
+							<button type="button" class="close" aria-label="Cerrar menú"></button>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Catálogo de Multitracks</h2>
+								<p>Explora nuestras herramientas y recursos de audio profesional listos para tus proyectos.</p>
+							</div>
+						</header>
+
+						<!-- Catálogo -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="catalog-header-actions">
+										<div class="search-wrapper">
+											<input type="text" id="track-search" placeholder="Buscar por canción, artista, género (#edm, #worship)..." />
+										</div>
+									</div>
+
+									<div class="grid-catalog" id="catalog-grid-container">
+										<!-- Inyección dinámica desde store-logic.js -->
+									</div>
+
+									<div id="no-results-message" style="display: none; text-align: center; padding: 4em 2em; color: var(--onlylord-text-dim); font-family: 'Raleway', Helvetica, sans-serif; font-size: 1.1em; letter-spacing: 0.05em;">
+										No se encontraron elementos vinculados a los criterios de búsqueda o etiquetas.
+									</div>
+
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer (4 Contactos Simétricos Rectos a la Izquierda y Copyright Centrado) -->
+					<section id="footer">
+						<div class="inner">
+							<div class="contact">
+								<div class="footer-col">
+									<h2 class="major">Información de Contacto</h2>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:beltsasar007@gmail.com">beltsasar007@gmail.com</a></li>
+										<li class="icon brands fa-whatsapp"><a href="https://wa.me/59162276138" target="_blank">WhatsApp Business</a></li>
+										<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@onlylordMT" target="_blank">Canal de YouTube</a></li>
+										<li class="icon brands fa-instagram"><a href="https://www.instagram.com/only_lord_music/" target="_blank">Instagram Oficial</a></li>
+									</ul>
+								</div>
+								<div class="footer-col">
+									<h2 class="major">Soporte Operativo</h2>
+									<p>Nuestras pistas e instrumentales se procesan en sistemas WAV independientes a 24-bits de resolución, garantizando máxima estabilidad estructural para su uso inmediato en softwares de directo o sesiones DAW.</p>
+								</div>
+							</div>
+							<ul class="copyright">
+								<li>&copy; 2026 Only Lord. Todos los derechos reservados.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts (RUTAS CORREGIDAS CON BARRA RELATIVA ABSOLUTA PARA INTERNET) -->
+			<script src="./assets/js/jquery.min.js"></script>
+			<script src="./assets/js/jquery.scrollex.min.js"></script>
+			<script src="./assets/js/browser.min.js"></script>
+			<script src="./assets/js/breakpoints.min.js"></script>
+			<script src="./assets/js/util.js"></script>
+			<script src="./assets/js/main.js"></script>
+			<script src="./assets/js/store-logic.js"></script>
+
+	</body>
+</html>

@@ -1,224 +1,234 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>ONLY LORD MT | Multitracks Profesionales</title>
+	<head>
+<meta name="google-site-verification" content="8aJaQ3crrwY0ubAan4DhAtLsiW9zaJ0j0u2H2sUvxAs" />
+		<title>ONLY LORD - Productor Musical</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Banner con imagen desvanecida de fondo */
+			#banner {
+				background-image: linear-gradient(rgba(7, 7, 8, 0.5), rgba(7, 7, 8, 0.82)), url("assets/images/home/Banner.jpg");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
 
-<!-- SEO -->
-<meta name="description" content="ONLY LORD MT - Multitracks profesionales para músicos, iglesias y bandas. Descarga y solicita tus pistas personalizadas.">
-<meta name="keywords" content="multitracks, pistas de audio, música, producción musical, ONLY LORD MT">
-<meta name="author" content="ONLY LORD MT">
+			/* Imágenes del home: tamaño uniforme obligatorio */
+			.wrapper.spotlight .image,
+			.features article .image {
+				aspect-ratio: 16 / 10;
+				width: 100%;
+				min-height: unset;
+				height: auto;
+				overflow: hidden;
+				background-color: #0d0e11;
+			}
 
-<!-- Open Graph (para compartir en redes y mejor aparición en Google/Brave) -->
-<meta property="og:title" content="ONLY LORD MT - Multitracks Profesionales">
-<meta property="og:description" content="Descarga multitracks profesionales o solicita tu pista personalizada.">
-<meta property="og:image" content="https://only-lord-mt.vercel.app/images/hero-bg.jpg">
-<meta property="og:url" content="https://only-lord-mt.vercel.app/">
-<meta property="og:type" content="website">
+			.wrapper.spotlight .image img,
+			.features article .image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+				background-color: #0d0e11;
+			}
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+			/* Micro-interacciones visuales premium para las tarjetas del Home */
+			.features article {
+				transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease !important;
+			}
+			.features article:hover {
+				transform: translateY(-5px);
+				border-color: var(--onlylord-accent) !important;
+				box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1) !important;
+			}
+			.features article .image img {
+				transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+			}
+			.features article:hover .image img {
+				transform: scale(1.03);
+			}
+		</style>
+	</head>
+	<body>
 
-<!-- FAVICON PROFESIONAL: Clave de sol vectorial dorada + LORD MT -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%230d0d0d'/><path d='M36 6 C38 8, 38 14, 34 18 C30 22, 26 18, 28 14 C30 10, 36 8, 36 6 Z M32 18 L32 50 L28 50 L28 18 Z' fill='%23f5c542'/><text x='50%25' y='85%25' text-anchor='middle' font-size='8' font-family='Arial' fill='%23f5c542'>LORD MT</text></svg>">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-</head>
-<body>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">ONLY LORD</a></h1>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+					</header>
 
-<header>
-    <h1>ONLY LORD</h1>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#multitracks">Multitracks</a>
-        <a href="#gratis">Recursos Gratis</a>
-        <a href="#personalizado">Multitrack Personalizado</a>
-        <a id="cart-btn" onclick="openCart()">Carrito</a>
-    </nav>
-</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Navegación</h2>
+							<ul class="links">
+								<li><a href="index.html">Inicio / Portafolio</a></li>
+								<li><a href="multitracks.html">Multitracks / Secuencias</a></li>
+								<li><a href="beats.html">Beats</a></li>
+								<li><a href="sonidos.html">Sonidos Premium</a></li>
+								<li><a href="produccion.html">Producción Musical Online</a></li>
+								<li><a href="cursos.html">Cursos Online</a></li>
+								<li><a href="recursos.html">Recursos Gratuitos</a></li>
+								<li><a href="pedido.html">Pedido Personalizado</a></li>
+								<li><a href="soporte.html">Soporte & Ayuda</a></li>
+								<li><a href="membresia.html">LORD VIP <span class="menu-badge">Próximamente</span></a></li>
+								<li><a href="carrito.html" class="menu-cart-link"><span class="icon solid fa-shopping-cart"></span> Mi Carrito (0)</a></li>
+							</ul>
+							<button type="button" class="close" aria-label="Cerrar menú"></button>
+						</div>
+					</nav>
 
-<section id="inicio" class="hero">
-    <div class="hero-content">
-        <h1>ONLY LORD</h1>
-        <h2>Multitracks profesionales · Producción musical · Producción audiovisual</h2>
-        <p>
-            Multitracks de alta calidad para iglesias, bandas y músicos.
-            Sonido moderno, arreglos profesionales - personalizados y recursos listos para usar.
-        </p>
-        <div class="hero-buttons">
-            <a href="#multitracks" class="btn-primary">Ver Multitracks</a>
-            <a href="#personalizado" class="btn-secondary">Multitrack Personalizado</a>
-        </div>
-    </div>
-</section>
+				<!-- Banner Principal -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon solid fa-sliders-h"></span></div>
+							<h2>ONLY LORD</h2>
+							<p>Productor Musical</p>
+						</div>
+					</section>
 
-<section id="multitracks">
-<h2 class="section-title">Multitracks</h2>
-<div class="products">
+				<!-- Wrapper -->
+					<section id="wrapper">
 
-<!-- PRODUCTOS COMPLETOS -->
-<div class="product-card">
-<img src="images/lonely.JPG"><h3>LONELY - VAES</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('__7gTx79T2Y')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('LONELY - VAES',19)">Añadir al carrito</button>
-</div>
+						<!-- One: Perfil Corto con Imagen de Consola de Estudio Profesional -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<div class="image" style="border-radius:0;"><img src="assets/images/home/Produccion de alta fidelidad.jpg" alt="Producción de alta fidelidad Only Lord" loading="eager" /></div>
+									<div class="content">
+										<h2 class="major">Producción de Alta Fidelidad</h2>
+										<p>Diseño sonoro avanzado y recreación instrumental desde cero. Creamos stems, parches y herramientas de audio profesionales con la máxima precisión técnica para tus shows en vivo y proyectos de estudio.</p>
+										<a href="multitracks.html" class="special">Ver Catálogo de Stems</a>
+									</div>
+								</div>
+							</section>
 
-<div class="product-card">
-<img src="images/lo que Dios duce que soy.JPG"><h3>LO QUE DIOS DICE QUE SOY</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('w_LFCopstUk')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('LO QUE DIOS DICE QUE SOY',19)">Añadir al carrito</button>
-</div>
+						<!-- Two: YouTube Corto con Imagen de Sintetizadores de Audio -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="https://www.youtube.com/@onlylordMT" target="_blank" class="image" style="border-radius:0;"><img src="assets\images\home\Portafolio en Youtube 2.png" alt="Portafolio audiovisual en YouTube de Only Lord" loading="lazy" /></a>
+									<div class="content">
+										<h2 class="major">Portafolio en YouTube</h2>
+										<p>Comprueba la pegada, mezcla y fidelidad de nuestro trabajo. En nuestro canal oficial compartimos las demostraciones audiovisuales de cada una de nuestras reconstrucciones instrumentales.</p>
+										<a href="https://www.youtube.com/@onlylordMT" target="_blank" class="special">Visitar Canal Oficial</a>
+									</div>
+								</div>
+							</section>
 
-<div class="product-card">
-<img src="images/AWAKE AND LIVE.JPG"><h3>AWAKE AND LIVE - SKILLET</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('MdgiTgkoO4g')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('AWAKE AND LIVE - SKILLET',19)">Añadir al carrito</button>
-</div>
+						<!-- Three: Secciones del Catálogo de la Tienda con Imágenes Conceptuales Especializadas -->
+							<section id="three" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Librerías & Recursos</h2>
+									<section class="features">
+										<article>
+											<a href="multitracks.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Multitracks Premiun.webp" alt="Multitracks y secuencias de audio profesional" loading="lazy" /></span>
+												<h3 class="major">Multitracks Premium</h3>
+												<p>Pistas separadas en formato WAV a 24-bits con click y guías de voz sincronizadas.</p>
+												<span class="special">Ver Secuencias</span>
+											</a>
+										</article>
+										<article>
+											<a href="sonidos.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Sonidos Premiun.jpg" alt="Teclados MIDI, sintetizadores y parches de sonido" loading="lazy" /></span>
+												<h3 class="major">Sonidos Premium</h3>
+												<p>Librerías exclusivas para Kontakt, loops en DrumPads y presets para procesadores de guitarra.</p>
+												<span class="special">Explorar Librerías</span>
+											</a>
+										</article>
+										<article>
+											<a href="beats.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Beats.jpeg" alt="Beats e instrumentales ONLY LORD" loading="lazy" /></span>
+												<h3 class="major">Beats</h3>
+												<p>Muy pronto: beats para pop, hip hop, rap, trap, congregacionales y más géneros.</p>
+												<span class="special">Ver Beats</span>
+											</a>
+										</article>
+										<article>
+											<a href="produccion.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Produccion Musical Online.jpg" alt="Producción musical online ONLY LORD" loading="lazy" /></span>
+												<h3 class="major">Producción Musical Online</h3>
+												<p>Mezcla, mastering, arreglos, composición y el servicio "Crea tu música con nosotros".</p>
+												<span class="special">Ver Servicios</span>
+											</a>
+										</article>
+										<article>
+											<a href="cursos.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Cursos Online.avif" alt="Cursos online ONLY LORD" loading="lazy" /></span>
+												<h3 class="major">Cursos Online</h3>
+												<p>Formación musical en línea. Clases personalizadas y contenido educativo en nuestro canal de YouTube.</p>
+												<span class="special">Ver Cursos</span>
+											</a>
+										</article>
+										<article>
+											<a href="recursos.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Recursos Gratuitos.png" alt="Plugins VST y recursos gratuitos para producción musical" loading="lazy" /></span>
+												<h3 class="major">Recursos Gratuitos</h3>
+												<p>Descargas libres de stems de prueba, utilidades VST y complementos para tu flujo de trabajo.</p>
+												<span class="special">Acceder a Descargas</span>
+											</a>
+										</article>
+										<article>
+											<a href="pedido.html" class="feature-card-link">
+												<span class="image"><img src="assets/images/home/Pedidos a Medida.avif" alt="Pedidos personalizados de multitracks y arreglos" loading="lazy" /></span>
+												<h3 class="major">Pedidos a Medida</h3>
+												<p>Servicio de réplicas instrumentales personalizadas. Tu track listo en 5 días hábiles.</p>
+												<span class="special">Hacer una Solicitud</span>
+											</a>
+										</article>
+									</section>
+								</div>
+							</section>
 
-<div class="product-card">
-<img src="images/estoy convencido.JPG"><h3>ESTOY CONVENCIDO - WORSHIP BAND LIVE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('OscK7rdACjc')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('ESTOY CONVENCIDO - WORSHIP BAND LIVE',19)">Añadir al carrito</button>
-</div>
+					</section>
 
-<div class="product-card">
-<img src="images/SALMOS133SO.jpg"><h3>SALMOS 133 / SOBRENATURAL - MERENGUE NEW WINE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('b5d5j3CW6Vo')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('SALMOS 133 / SOBRENATURAL - MERENGUE NEW WINE',19)">Añadir al carrito</button>
-</div>
+				<!-- Footer (4 Contactos Simétricos Rectos a la Izquierda y Copyright Centrado) -->
+					<section id="footer">
+						<div class="inner">
+							<div class="contact">
+								<div class="footer-col">
+									<h2 class="major">Información de Contacto</h2>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:beltsasar007@gmail.com">beltsasar007@gmail.com</a></li>
+										<li class="icon brands fa-whatsapp"><a href="https://wa.me/59162276138" target="_blank">WhatsApp Business</a></li>
+										<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@onlylordMT" target="_blank">Canal de YouTube</a></li>
+										<li class="icon brands fa-instagram"><a href="https://www.instagram.com/only_lord_music/" target="_blank">Instagram Oficial</a></li>
+									</ul>
+								</div>
+								<div class="footer-col">
+									<h2 class="major">Soporte Operativo</h2>
+									<p>Nuestras pistas e instrumentales se procesan en sistemas WAV independientes a 24-bits de resolución, garantizando máxima estabilidad estructural para su uso inmediato en softwares de directo o sesiones DAW.</p>
+								</div>
+							</div>
+							<ul class="copyright">
+								<li>&copy; 2026 Only Lord. Todos los derechos reservados.</li>
+							</ul>
+						</div>
+					</section>
 
-<div class="product-card">
-<img src="images/fiesta en el desierto.JPG"><h3>FIESTA EN EL DESIERTO - REMIX</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('_LnW2izFevI')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('FIESTA EN EL DESIERTO - REMIX',19)">Añadir al carrito</button>
-</div>
+			</div>
 
-<div class="product-card">
-<img src="images/CUANDO_GP.jpg"><h3>CUANDO YO TE CONOCI - GP</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('LnJCi9AvAbE')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('CUANDO YO TE CONOCI - GP',19)">Añadir al carrito</button>
-</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/store-logic.js"></script>
 
-<div class="product-card">
-<img src="images/HIJOLIVE.jpg"><h3>TU HIJO SOY - LIVE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('RjpYd6R5msg')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('TU HIJO SOY - LIVE',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/CONPODER.jpg"><h3>CON PODER - LIVE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('vVI-M39MZdw')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('CON PODER - LIVE',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/ERESFIELJOR.jpg"><h3>ERES FIEL - CAMBIARE MI TRISTEZA - JORGE PRIVADO</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('ImQQLfu17ec')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('ERES FIEL - CAMBIARE MI TRISTEZA - JORGE PRIVADO',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/EN LOS.jpg"><h3>EN LOS MONTES - LIVE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('KU5DXXtJNAg')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('EN LOS MONTES - LIVE',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/HORMIG.jpg"><h3>LO FUNDAMENTAL - LA HORMIGA</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('6m3ZfsMO2Dg')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('LO FUNDAMENTAL - LA HORMIGA',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/HOSS.jpg"><h3>HOSSANA - DUBSTEP - MARCOS BARRIENTOS</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('oOtiCi8oVUk')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('HOSSANA - DUBSTEP - MARCOS BARRIENTOS',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/CANTAMOR.jpg"><h3>CANTAREMOS DE TU GRAN AMOR - LIVE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('bkzfSG7HcKM')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('CANTAREMOS DE TU GRAN AMOR - LIVE',19)">Añadir al carrito</button>
-</div>
-
-<div class="product-card">
-<img src="images/KORI.jpg"><h3>A MI CORAZON - KORI JOBE</h3><span class="price">$19</span>
-<div class="play-overlay" onclick="openPreview('rQWSn_e3v9I')"><div class="play-triangle"></div></div>
-<button class="add-cart" onclick="addToCart('A MI CORAZON - KORI JOBE',19)">Añadir al carrito</button>
-</div>
-
-</div>
-</section>
-
-<section id="gratis">
-<h2 class="section-title">Recursos Gratis</h2>
-<p style="text-align:center;font-size:1.5rem;color:#f5c542;">MUY PRONTO</p>
-</section>
-
-<section id="personalizado">
-<h2 class="section-title">Multitrack Personalizado</h2>
-<div class="custom-section">
-<input id="custom-name" placeholder="Tema del multitrack">
-<input id="custom-artist" placeholder="Artista">
-<input id="custom-video" placeholder="Link de video de referencia">
-<textarea id="custom-details" placeholder="Datos extra: especificaciones"></textarea>
-<button class="custom-btn" onclick="sendCustomForm()">Solicitar</button>
-</div>
-</section>
-
-<!-- MODAL DEMO -->
-<div id="previewModal" class="modal">
-<div class="modal-content">
-<button class="modal-close" onclick="closePreview()">×</button>
-<iframe id="preview-iframe" allowfullscreen></iframe>
-</div>
-</div>
-
-<!-- MODAL CARRITO -->
-<div id="cartModal" class="modal">
-<div class="modal-content">
-<button class="modal-close" onclick="closeCart()">×</button>
-<h2>Carrito</h2>
-<div id="cart-items"></div>
-<h3>Total: <span id="cart-total">$0</span></h3>
-
-<div class="custom-section">
-<input id="client-name" placeholder="Nombre completo">
-<input id="client-email" placeholder="Correo electrónico">
-<input id="client-country" placeholder="País">
-<input id="client-city" placeholder="Ciudad">
-<select id="client-payment">
-<option value="">Selecciona método de pago</option>
-<option value="BINANCE USDT">BINANCE USDT</option>
-<option value="REMITLY">REMITLY</option>
-<option value="AIRTM">AIRTM</option>
-<option value="Transferencia QR (Bolivia)">Transferencia QR (Bolivia)</option>
-</select>
-<button class="custom-btn" onclick="checkoutCart()">Pagar</button>
-</div>
-</div>
-</div>
-
-<!-- ===== FOOTER MODERNO CON ICONOS ===== -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>Contacto</h3>
-            <p><i class="fa-solid fa-phone"></i> <a href="https://wa.me/59162276138" target="_blank">+591 62276138</a></p>
-            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:beltsasar007@gmail.com">beltsasar007@gmail.com</a></p>
-        </div>
-        <div class="footer-column">
-            <h3>Redes Sociales</h3>
-            <p><a href="https://www.youtube.com/@onlylordMT" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></p>
-            <p><a href="https://www.tiktok.com/@only_lord_mt?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a></p>
-        </div>
-        <div class="footer-column">
-            <h3>Derechos</h3>
-            <p>©2026 por <strong>ONLY LORD MT</strong> Todos Los Derechos Reservados.</p>
-        </div>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+	</body>
 </html>
-
